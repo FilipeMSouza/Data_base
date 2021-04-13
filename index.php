@@ -10,10 +10,11 @@ include 'Templates/header.php'
         <link rel="stylesheet" href="Style/style.css"
     </head>
     <body>
-        <div>
-            <img class="Img" src="Assets/logo.png" target="blank" alt="https://www.panthers.com/">
-        </div>
         <div class = "container">
+            <div>
+                <img class="Img" src="Assets/logo.png" target="blank" alt="https://www.panthers.com/">
+            </div>
+
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label" ></label>
@@ -25,10 +26,12 @@ include 'Templates/header.php'
                     <input type="password" class="form-control" placeholder="Password" style="color: #012840; border-radius: 0px 0px 5px 5px;">
                 </div>
             </form>
+
             <div class="bttn">
-                <button type="submit" class="btn btn-primary btn-lg" style="background-color: #0B8AD9; color: white">Register</button>
-                <button type="submit" class="btn btn-secondary btn-lg" style="background-color: #012840; color: white">Login</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="display: flex;margin-right: 15px; background-color: #0B8AD9; color: white">Register</button>
+                <button type="submit" class="btn btn-secondary btn-lg" style="display: flex;margin-right: 15px; background-color: #012840; color: white">Login</button>
             </div>
+
         </div>
 
     </body>
