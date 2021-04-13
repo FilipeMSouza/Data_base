@@ -1,105 +1,77 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
 
-    <title>Collapsible sidebar using Bootstrap 3</title>
+		<!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <title>Bootstrap 4 Template with Sidebar Menu</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="Coach_Style.css">
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media-queries.css">
 
-</head>
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-<body>
+    </head>
 
+    <body>
 
+		<!-- Wrapper -->
+    	<div class="wrapper">
 
-<div class="wrapper">
-    <!-- Sidebar Holder -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Coach View</h3>
-            </h3>
-        </div>
+			<!-- Sidebar -->
+			<nav class="sidebar">
 
-        <ul class="list-unstyled components">
-            <li class="active">
-                <a href="#menu">Over Viem</a>
+				<!-- close sidebar menu -->
+				<div class="dismiss">
+					<i class="fas fa-arrow-left"></i>
+				</div>
 
-            </li>
-            <li>
-                <a href="#menu">Players</a>
+				<div class="logo">
+					<h3><a>Bootstrap 4 Template with Sidebar Menu</a></h3>
+				</div>
 
-            </li>
-            <li>
-                <a href="#menu">Resgister New Player</a>
-            </li>
-            <li>
-                <a href="#menu">Free Agent</a>
-            </li>
-        </ul>
+			</nav>
+			<!-- End sidebar -->
 
+			<!-- Dark overlay -->
+    		<div class="overlay"></div>
 
-    </nav>
+			<!-- Content -->
+			<div class="content">
 
-    <!-- Page Content Holder -->
-    <div id="content">
+				<!-- open sidebar menu -->
+				<a class="btn btn-primary btn-customized open-menu" href="#" role="button">
+                    <i class="fas fa-align-left"></i>
+                </a>
 
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
+		        <!-- Top content -->
+        <!-- End wrapper -->
 
-                <div class="navbar-header">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn" style="background-color: #165D8F; color: #">
-                        <i class="glyphicon glyphicon-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                </div>
+        <!-- Javascript -->
+		<script src="assets/js/jquery-3.3.1.min.js"></script>
+		<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" style="color: #0B8AD9;">Page</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-
-    </div>
-</div>
-
-
-
-
-
-<!-- jQuery CDN -->
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<!-- Bootstrap Js CDN -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- jQuery Custom Scroller CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-
-
-        $('#sidebarCollapse').on('click', function() {
-            $('#sidebar, #content').toggleClass('active');
-            $('.collapse.in').toggleClass('in');
-            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-        });
-    });
-</script>
-</body>
+    </body>
 
 </html>
-
-<?php
-include "../.././Templates/footer.php";
-?>

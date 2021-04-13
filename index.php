@@ -12,24 +12,24 @@ include 'Templates/header.php'
     <body>
         <div class = "container">
             <div>
-                <img class="Img" src="Assets/logo.png" target="blank" alt="https://www.panthers.com/">
+                <img class="Img" src="Assets/gb.png" target="blank">
             </div>
 
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label" ></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name" style="color: #012840; border-radius: 5px 5px 0px 0px ;">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name" style="color: #000000; border-radius: 5px 5px 0px 0px;">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label" style="margin-top: 8px;"></label>
-                    <input type="password" class="form-control" placeholder="Password" style="color: #012840; border-radius: 0px 0px 5px 5px;">
+                    <input type="password" class="form-control" placeholder="Password" style="color: #000000; border-radius: 0px 0px 5px 5px;">
                 </div>
             </form>
 
             <div class="bttn">
-                <button type="submit" class="btn btn-primary btn-lg" style="display: flex;margin-right: 15px; background-color: #0B8AD9; color: white">Register</button>
-                <button type="submit" class="btn btn-secondary btn-lg" style="display: flex;margin-right: 15px; background-color: #012840; color: white">Login</button>
+                <button type="submit" class="btn btn-primary btn-lg" style="display: flex;margin-right: 15px; background-color: #264039; color: #ffffff; font-weight: bold">Register</button>
+                <button type="submit" class="btn btn-secondary btn-lg" style="display: flex;margin-right: 15px; background-color: #ffffff; color: #000000; font-weight: bold">Login</button>
             </div>
 
         </div>
@@ -37,6 +37,3 @@ include 'Templates/header.php'
     </body>
 </html>
 
-<?php
-include 'Templates/footer.php'
-?>
