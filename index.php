@@ -17,12 +17,12 @@ include 'Templates/header.php'
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label" ></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name" style="color: #012840">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="User Name" style="color: #012840; border-radius: 5px 5px 0px 0px ;">
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label"></label>
-                    <input type="password" class="form-control" placeholder="Password" style="color: #012840">
+                    <label for="exampleInputPassword1" class="form-label" style="margin-top: 8px;"></label>
+                    <input type="password" class="form-control" placeholder="Password" style="color: #012840; border-radius: 0px 0px 5px 5px;">
                 </div>
             </form>
             <div class="bttn">
