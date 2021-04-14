@@ -1,0 +1,95 @@
+body{
+    background-color: #f2f2f2;
+}
+
+.navbar-dark{
+    background-color: #203731;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.navbar-brand{
+    display: flex;
+    font-size: 18px;
+    justify-content: left;
+    color: #fff;
+    background-color: #142922;
+    
+}
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.Regs{
+    color: #203731;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: -40px;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 60%;
+    height: 70%;
+    border-radius: 15px;
+    box-shadow: 5px 5px #888888;
+}
+
+.row{
+    display: flex;
+    width: 65%;
+    margin-right:  auto;
+    margin-left:  auto;
+    margin-top: 80px;
+}
+
+.form-floating{
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.form-group{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 65%;
+    border-radius: 5px;
+    box-shadow: 2px 2px #888888;
+}
+
+.container-fluid{
+    display: flex;
+    margin-top: -70px;
+    margin-left: 85px;
+    margin-right: 85px;
+}
+
+.bttn{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.btn-primary{
+    display: flex;
+    margin-right: 15px;
+    background-color: #264039; 
+    color: #ffffff; 
+    font-weight: bold;
+    transition: 0,5s;
+}
+
+.btn-primary:hover{
+    background-color: #203731;
+    color: #fff;
+    
+}
