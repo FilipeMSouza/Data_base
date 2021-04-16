@@ -72,13 +72,12 @@ body{
     padding-right:80px;
     width: 65%;
     margin-top: -70px;
-    
-    justify-content: center;
+
 }
 
 .bttn{
     display: flex;
-    margin-top: 40px;
+    margin-top: 40px ;
     justify-content: center;
 }
 
