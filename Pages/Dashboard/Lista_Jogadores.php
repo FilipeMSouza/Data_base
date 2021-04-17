@@ -23,6 +23,24 @@ include '../.././Templates/header.php';
     <button class="Btn_LgO" onclick="location.href='../../index.php'">Sair</button>
 </div>
 
+<!--Barra lateal contendo o Menu-->
+<div class="Menu">
+    <div class = "Lista-box">
+        <ul>
+            <li class="Dash">
+                <a href="./index.php">Painel de Controle</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class = "Lista-box">
+        <ul>
+            <li class="Novo_Jogador">
+                <a href="./Reg_Jogador.php">Cadastrar Jogador</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 
 <div class="card-body">
@@ -58,7 +76,8 @@ include '../.././Templates/header.php';
                 <th scope="col">Peso</th>
                 <th scope="col">Equipe</th>
                 <th scope="col">Posição</th>
-                <th class="text-center">Time anterior</th>
+                <th scope="col">Time anterior</th>
+                <th class="text-center">funções</th>
             </tr>
             </thead>
             <tbody>
@@ -72,21 +91,14 @@ include '../.././Templates/header.php';
                 <td id="#">Ofenssive</td>
                 <td id="#">Quarterback</td>
                 <td id="#" class="text-center"> California Golden Bears (Faculdade)</td>
-                <td> <button class="btn btn-primary btn-sm">Editar</button></td>
-                <td> <button class="btn btn-primary btn-sm">Delete</button></td>
-            </tr>
-            <tr>
-                <th id="#" scope="row">12</th>
-                <td id="#">Aaron Rodgers</td>
-                <td id="#">37</td>
-                <td id="#">121.5</td>
-                <td id="#">1,88m</td>
-                <td id="#">102Kg</td>
-                <td id="#">Ofenssive</td>
-                <td id="#">Quarterback</td>
-                <td id="#" class="text-center"> California Golden Bears (Faculdade)</td>
-                <td> <button class="btn btn-primary btn-sm">Editar</button></td>
-                <td> <button class="btn btn-primary btn-sm">Delete</button></td>
+                <td>
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Opções
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><button class="teste" href="#" onclick="">Editar</button></li>
+                        <li><button class="teste" href="#" onclick="">Remover</button></li>
+                    </ul>
+                </td>
 
             </tr>
             <tr>
@@ -99,9 +111,14 @@ include '../.././Templates/header.php';
                 <td id="#">Ofenssive</td>
                 <td id="#">Quarterback</td>
                 <td id="#" class="text-center"> California Golden Bears (Faculdade)</td>
-                <td> <button class="btn btn-primary btn-sm">Editar</button></td>
-                <td> <button class="btn btn-primary btn-sm">Delete</button></td>
-
+                <td>
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Opções
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><button class="teste" href="#">Editar</button></li>
+                        <li><button class="teste" href="#">Remover</button></li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th id="#" scope="row">12</th>
@@ -113,9 +130,14 @@ include '../.././Templates/header.php';
                 <td id="#">Ofenssive</td>
                 <td id="#">Quarterback</td>
                 <td id="#" class="text-center"> California Golden Bears (Faculdade)</td>
-                <td> <button class="btn btn-primary btn-sm">Editar</button></td>
-                <td> <button class="btn btn-primary btn-sm">Delete</button></td>
-
+                <td>
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Opções
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><button class="teste" href="#">Editar</button></li>
+                        <li><button class="teste" href="#">Remover</button></li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <th id="#" scope="row">12</th>
@@ -127,9 +149,33 @@ include '../.././Templates/header.php';
                 <td id="#">Ofenssive</td>
                 <td id="#">Quarterback</td>
                 <td id="#" class="text-center"> California Golden Bears (Faculdade)</td>
-                <td> <button class="btn btn-primary btn-sm">Editar</button></td>
-                <td> <button class="btn btn-primary btn-sm">Delete</button></td>
-
+                <td>
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Opções
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><button class="teste" href="#">Editar</button></li>
+                        <li><button class="teste" href="#">Remover</button></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th id="#" scope="row">12</th>
+                <td id="#">Aaron Rodgers</td>
+                <td id="#">37</td>
+                <td id="#">121.5</td>
+                <td id="#">1,88m</td>
+                <td id="#">102Kg</td>
+                <td id="#">Ofenssive</td>
+                <td id="#">Quarterback</td>
+                <td id="#" class="text-center"> California Golden Bears (Faculdade)</td>
+                <td>
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Opções
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><button class="teste" href="#">Editar</button></li>
+                        <li><button class="teste" href="#">Remover</button></li>
+                    </ul>
+                </td>
             </tr>
             </tbody>
         </table>

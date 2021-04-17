@@ -42,19 +42,10 @@ include '../../Templates/header.php'
             <div class = "Lista-box">
                 <ul>
                     <li class="Novo_Jogador">
-                        <a href="#">Cadastrar Jogador</a>
+                        <a href="./Reg_Jogador.php">Cadastrar Jogador</a>
                     </li>
                 </ul>
             </div>
-
-            <div class = "Lista-box">
-                <ul>
-                    <li class="Perfil">
-                        <a href="#">Perfil</a>
-                    </li>
-                </ul>
-            </div>
-
         </div>
 
         <!--Gráficos A favor-->
