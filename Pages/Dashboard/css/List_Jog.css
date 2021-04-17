@@ -115,7 +115,7 @@ a:hover{
 .filtro1{
     position: relative;
     margin-top: 50px;
-    width: 5%;
+    width: 6%;
 }
 
 .filtro1:focus{
@@ -125,7 +125,7 @@ a:hover{
 .filtro2{
     position: relative;
     margin-top: -38px;
-    margin-left: 90px;
+    margin-left: 108px;
     width: 10%;
 }
 .filtro2:focus{
@@ -135,7 +135,7 @@ a:hover{
 .filtro3{
     position: relative;
     margin-top: -38px;
-    margin-left: 260px;
+    margin-left: 280px;
     width: 10%;
 
 }
