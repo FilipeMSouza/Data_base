@@ -1,33 +1,5 @@
-<?php
-include '../../database/models.php';
-//include_once '../../database/database.ini.php';
-
-use ConexaoPHPPostgres\clienteModel as clienteModel;
-
-$nome = null;
-$telefone = null;
-$cpfcliente = null;
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $nome = $_REQUEST['nome'];
-    $telefone = $_REQUEST['telefone'];
-    $cpfcliente = $_REQUEST['cpfcliente'];
 
 
-    try {
-        $clienteModel = new clienteModel($pdo);
-        $employerModel->insert($_REQUEST['nome'], $_REQUEST['telefone'], $_REQUEST['cpfcliente']);
-        header("Location: ../../pages/mecanico.php");
-    } catch (PDOException $e) {
-        $error = $e->getMessage();
-    }
-}
-?>
-
-<?php
-    include('../../templates/header.php');
-    ?>
 
 
 <html>
@@ -35,10 +7,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/style/Style.css">
+    <link rel="stylesheet" href="../../assets/style/CLI_Style.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="../../index.php">
+                VHF Mecanica
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./mecanico.php">Mecanicos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./veiculo.php">Veiculos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./conserto.php">Consertos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="container">
 
         <div class="row py-5">

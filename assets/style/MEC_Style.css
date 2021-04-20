@@ -1,0 +1,13 @@
+.navbar{
+    background-color: #024059 ;
+}
+
+.footer-copyright{
+    font-size: 12px;
+    background-color: #024059;
+    color: white;
+}
+
+.form-control{
+    box-shadow: 0 2px 5px lightgray;
+}
