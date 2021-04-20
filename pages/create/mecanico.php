@@ -1,4 +1,33 @@
+<?php
+//include '../../database/models.php';
+//include_once '../../database/database.ini.php';
 
+use ConexaoPHPPostgres\mecanicoModel as mecanicoModel;
+
+$nome = null;
+$celular = null;
+$cpf = null;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $nome = $_REQUEST['nome'];
+    $celular = $_REQUEST['celular'];
+    $cpf = $_REQUEST['cpf'];
+
+
+    try {
+        $mecanicoModel = new mecanicoModel($pdo);
+        $employerModel->insert($_REQUEST['nome'], $_REQUEST['celular'], $_REQUEST['cpf']);
+        header("Location: ../../pages/mecanico.php");
+    } catch (PDOException $e) {
+        $error = $e->getMessage();
+    }
+}
+?>
+
+<?php
+include('../../templates/header.php');
+?>
 
 <html>
 <head>

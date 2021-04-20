@@ -1,4 +1,34 @@
+<?php
+include '../../database/models.php';
+//include_once '../../database/database.ini.php';
 
+use ConexaoPHPPostgres\veiculoModel as veiculoModel;
+use ConexaoPHPPostgres\clienteModel as clienteModel;
+
+$clienteModel = new clienteModel($pdo);
+$cliente = $clienteModel->all();
+
+$placa = 0;
+$codigocliente = null;
+$marca = null;
+$modelo = null;
+$ano = null;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $essn =  $_REQUEST['placa'];
+    $cpfcliente =  $_REQUEST['cpfcliente'];
+    $marca =  $_REQUEST['marca'];
+    $modelo =  $_REQUEST['modelo'];
+    $ano =  $_REQUEST['ano'];
+    try {
+        $veiculoModel = new veiculoModel($pdo);
+        $veiculoModel->insert($_REQUEST['placa'], $_REQUEST['cpfcliente'], $_REQUEST['marca'], $_REQUEST['modelo'], $_REQUEST['ano']);
+        header("Location: ../../pages/veiculo.php");
+    } catch (PDOException $e) {
+        $error = $e->getMessage();
+    }
+}?>
 
 <html>
 

@@ -1,4 +1,29 @@
+<?php
+include '../../database/models.php';
+//include_once '../../database/database.ini.php';
 
+use ConexaoPHPPostgres\clienteModel as clienteModel;
+
+$nome = null;
+$telefone = null;
+$cpfcliente = null;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $nome = $_REQUEST['nome'];
+    $telefone = $_REQUEST['telefone'];
+    $cpfcliente = $_REQUEST['cpfcliente'];
+
+
+    try {
+        $clienteModel = new clienteModel($pdo);
+        $employerModel->insert($_REQUEST['nome'], $_REQUEST['telefone'], $_REQUEST['cpfcliente']);
+        header("Location: ../../pages/mecanico.php");
+    } catch (PDOException $e) {
+        $error = $e->getMessage();
+    }
+}
+?>
 
 
 

@@ -1,3 +1,45 @@
+<?php
+include '../../database/models.php';
+//include_once '../../database/database.ini.php';
+
+use ConexaoPHPPostgres\veiculoModel as veiculoModel;
+use ConexaoPHPPostgres\clienteModel as clienteModel;
+use ConexaoPHPPostgres\consertoModel as consertoModel;
+use ConexaoPHPPostgres\mecanicoModel as mecanicoModel;
+
+$clienteModel = new clienteModel($pdo);
+$cliente = $clienteModel->all();
+$veiculoModel = new veiculoModel($pdo);
+$veiculo = $veiculoModel->all();
+$mecanicomodel = new mecanicoModel($pdo);
+$mecanico = $mecanicomodel->all();
+
+$mecanico = null;
+$placa = null;
+$cliente = null;
+$idcodigorevisao = null;
+$datarevisao = null;
+$valorrevisao = null;
+$descricao = null;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $mecanico =  $_REQUEST['mecanico'];
+    $idcodigorevisao =  $_REQUEST['idcodigorevisao'];
+    $placa =  $_REQUEST['placa'];
+    $datarevisao =  $_REQUEST['datarevisao'];
+    $valorrevisao =  $_REQUEST['valorrevisao'];
+    $descricao =  $_REQUEST['descricao'];
+    $cliente =  $_REQUEST['cliente'];
+
+    try {
+        $consertoModel = new consertoModel($pdo);
+        $consertoModel->insert($_REQUEST['mecanico'], $_REQUEST['idcodigorevisao'], $_REQUEST['placa'], $_REQUEST['datarevisao'], $_REQUEST['valorrevisao'], $_REQUEST['descricao'], $_REQUEST['cliente']);
+        header("Location: ../../pages/veiculo.php");
+    } catch (PDOException $e) {
+        $error = $e->getMessage();
+    }
+}
+?>
 
 <html>
 <head>
