@@ -1,14 +1,19 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body class="d-flex flex-column min-vh-100">
     <div class="wrapper flex-grow-1"></div>
     <footer class="page-footer">
         <!-- Copyright -->
 
-        
-
         <div class="footer-copyright text-center py-3">
-            <img src="../../assets/images/logoUft.png" height="60">
-            <img src="../../assets/images/logoFabrica.png" height="80">
-            <a> © 2020: Banco de dados</a>
+            <a> © 2020: Banco de dados Desenvolvivo por Filipe M. Souza Victor Hugo C. Gomes</a>
 
         </div>
         <!-- Copyright -->

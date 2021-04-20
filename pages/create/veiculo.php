@@ -32,10 +32,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 
+<?php
+include('../../templates/header.php');
+?>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/style/Style.css">
+</head>
+<body>
 <div class="container">
     <div class="row py-5">
-        <div class="col"><a href="../../pages/veiculo.php"><img src="../../assets/images/backbutton.png" height="30px"></a></div>
+        <div class="col"><input class="btn btn-light btn-sm" type="submit" value="Retornar"></div>
         <div class="col">
             <h4>Cadastrar novo veiculo</h4>
         </div>
@@ -85,3 +96,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     </form>
 </div>
+</body>
+</html>
+
+<?php
+include('../../templates/footer.php');
+?>
