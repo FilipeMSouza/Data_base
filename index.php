@@ -15,46 +15,70 @@ $mecanico = $mecanicoModel->all();
 <?php
 include('templates/header.php');
 ?>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/IND_Style.css">
+</head>
+<body>
+    <div class="card-body">
+    <div class="table-responsive">
+        <table class="table tablesorter">
+            <thead class = "text">
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Telefone</th>
+                <th class="text-center">Funções</th>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-        <th scope="col">Nome</th>
-        <th scope="col">CPF</th>
-        <th scope="col">Telefone</th>
-        </tr>
-    </thead>
-    <?php foreach ($cliente as $cliente):?>
-    <tbody>
-        <tr>
-            <th scope="row"><?php echo $cliente['nomecliente']?></th>
-            <th scope="row"><?php echo $cliente['cpfcliente']?></th>
-            <th scope="row"><?php echo $cliente['telefone']?></th>
-        </tr>
-    </tbody>
-    <?php endforeach;?>
-</table>
+            </tr>
+            </thead>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-        <th scope="col">Mecanico</th>
-        <th scope="col">Telefone</th>
-        <th scope="col">CPF do Mecanico</th>
-        </tr>
-    </thead>
-    <?php foreach ($mecanico as $mecanico):?>
-    <tbody>
-        <tr>
-            <th scope="row"><?php echo $mecanico['nome']?></th>
-            <th scope="row"><?php echo $mecanico['celular']?></th>
-            <th scope="row"><?php echo $mecanico['cpf']?></th>
-        </tr>
-    </tbody>
-    <?php endforeach;?>
-</table>
+            <tbody>
+            <tr>
+                <th scope="row">aaaaaaaaaa</th>
+                <th>39855209842</th>
+                <th>19 991223123</th>
+                <td class="text-center">
+                    <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                    <button type="button" class="btn btn-danger btn-sm">Remover</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table tablesorter">
+                <thead class = "text">
+                    <tr>
+                    <th scope="col">Mecanico</th>
+                    <th scope="col">Telefone</th>
+                    <th class="text-center">CPF do Mecanico</th>
+                    <th class="text-center">Funções</th>
+                    </tr>
+                </thead>
 
+                <tbody>
+                    <tr>
+                        <th scope="row">aaaaaaaaaa</th>
+                        <th>39855209842</th>
+                        <th>19 991223123</th>
+                        <td class="text-center">
+                            <button type="button" class="btn btn-primary btn-sm">Editar</button>
+                            <button type="button" class="btn btn-danger btn-sm">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
 
 <?php
-include('templates/footer.php');
+include('./templates/footer.php');
 ?>
